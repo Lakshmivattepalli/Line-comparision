@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Line_Comparison
 {
@@ -47,16 +43,20 @@ namespace Line_Comparison
             Console.WriteLine("The Second Line Co-Ordinates are :");
             lineobject.DisplayLineCoOrdinates(lineobject.X1, lineobject.X2, lineobject.Y1, lineobject.Y2);
             lineobject.CalCulateLengthofLine(lineobject.X1, lineobject.X2, lineobject.Y1, lineobject.Y2);
-            double Length_of_Second_Line = lineobject.Length_of_Line;
-            Console.WriteLine("The second line length is :" + Length_of_Second_Line);
+            double Lenth_of_Second_Line = lineobject.Length_of_Line;
+            Console.WriteLine("The second line length is :" + Lenth_of_Second_Line);
 
-            if (Length_of_First_Line == Length_of_Second_Line)
+            if (Length_of_First_Line == Lenth_of_Second_Line)
             {
                 Console.WriteLine("The Two lines Are Equals");
             }
+            else if (Length_of_First_Line > Lenth_of_Second_Line)
+            {
+                Console.WriteLine("The first line is grether than Second line");
+            }
             else
             {
-                Console.WriteLine("The Two lines Are Not Equals");
+                Console.WriteLine("The first line is less than Second line");
             }
 
         }
